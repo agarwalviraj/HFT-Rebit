@@ -1,5 +1,7 @@
 # Rebit
 
+Our website hosted: [Rebit](rebit.netlify.app)
+
 Welcome to Rebit, it is built on polygon matic which helps in reducing the trash in the environment by incetivising the user to throw trash in the dustbin. For every gram of thrash thrown the user of Rebit can earn ETH thus making it exteremely beneficial not only for the environment but also for the user. Every piece of
 
 [From The Hindu](https://www.thehindu.com/news/cities/chennai/Recycling-waste-and-earning-money/article14688200.ece) :
