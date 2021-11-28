@@ -20,12 +20,12 @@ const Home = () => {
         </h1>
       </div>
       <div className="hero-section1">
-        <img src={hero} alt="" className="hero" />
         <div className="heading-container">
-          <h2 className="heading-main">Get rewarded for</h2>
-          <h2 className="heading-main">the kindness </h2>
-          <h2 className="heading-main">towards nature</h2>
-
+          <div>
+            <h2 className="heading-main">
+              Get rewarded for the kindness towards nature
+            </h2>
+          </div>
           <p className="heading-sub">
             The blockchain community based platform that pays you in the form of
             token whenever you put valid amount of recycles in the bin
@@ -39,6 +39,7 @@ const Home = () => {
             </button>
           </div>
         </div>
+        <img src={hero} alt="" className="hero" />
       </div>
       <div className="learn_more"></div>
     </>

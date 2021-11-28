@@ -15,7 +15,7 @@ span {
 }
 
 .hero {
-  margin-left: 48rem;
+  /* margin-left: 48rem; */
   margin-right: 5rem;
   margin-top: 1rem;
   height: 650px;
@@ -25,23 +25,25 @@ span {
 .heading-main {
   color: #0f3967;
   font-size: 54px;
-  margin-top: -3rem;
+  margin-top: 0rem;
 }
 
 .heading-container {
   max-width: 600px;
+  max-height: 40vh;
+  margin-top: 15rem;
 
-  margin-top: -28rem;
+  /* margin-top: -28rems */
   margin-left: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .heading-sub {
   font-size: 22px;
   font-family: "roboto";
-  margin-top: -1rem;
+  margin-top: 0rem;
 }
 
 .btn-start {
@@ -91,13 +93,16 @@ span {
 .hero-section1 {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   /* background: linear-gradient(114.03deg, #1cd8d2 7.43%, #93edc7 117.94%); */
   /* background: linear-gradient(114.03deg, #4776e6 7.43%, #8e54e9 117.94%); */
   background: linear-gradient(114.03deg, #93edc7 16.98%, #1cd8d2 90.66%);
 }
 
 .btn-more {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 
 @media screen and (max-width: 350px) {

@@ -81,7 +81,7 @@
 }
 
 .wallet-key {
-  width: 35rem;
+  width: 16rem;
   height: 2rem;
   border-width: 2px;
   border-radius: 4px;
@@ -91,6 +91,8 @@
   background-color: #f4f4f4;
   text-align: left;
   margin-left: 5rem;
+  padding-left: 1rem;
+  color: #303030;
 }
 
 .address {
@@ -106,4 +108,110 @@
   font-size: 22px;
   color: #0f3967;
   font-family: "montserrat";
+}
+
+.claim-button {
+  width: 8rem;
+  margin-left: 1rem;
+  height: 2.5rem;
+  font-size: 16px;
+  font-family: "roboto";
+  margin-top: 1.5rem;
+  background-color: #0f3967;
+  color: #dbdbdb;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.claim-button:hover {
+  transform: translate3d(0, 5px, 0);
+  transition-duration: 0.3s;
+  filter: drop-shadow(3px 4px 16px #d7d7d7);
+}
+
+.counter-container {
+  width: 8rem;
+  height: 5rem;
+  background-color: #303030;
+  margin-left: 0rem;
+  margin-top: -6rem;
+  border-radius: 8px;
+}
+.counter-container1 {
+  width: 8rem;
+  height: 5rem;
+  /* background-color: #303030; */
+  margin-left: 0rem;
+  margin-top: -6rem;
+  border-radius: 8px;
+}
+.counter-container2 {
+  width: 8rem;
+  height: 5rem;
+  /* background-color: #303030; */
+  margin-left: 0rem;
+  margin-top: -6rem;
+  border-radius: 8px;
+}
+.counter-container3 {
+  width: 8rem;
+  height: 5rem;
+  /* background-color: #303030; */
+  margin-left: 0rem;
+  margin-top: -6rem;
+  border-radius: 8px;
+}
+
+.conter-btn {
+  width: 8rem;
+  height: 1.7rem;
+  margin-top: 0rem;
+  background-color: #0f3967;
+  border-radius: 4px;
+  border-style: none;
+  color: #d7d7d7;
+}
+
+.input-value {
+  width: 25rem;
+  height: 2rem;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: #0f3a6770;
+  border-style: solid;
+  margin-top: 1.5rem;
+  background-color: #f4f4f4;
+  text-align: left;
+  margin-left: 5rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  color: #303030;
+}
+
+.img-container {
+  width: 8rem;
+  height: 10rem;
+  border-radius: 8px;
+}
+
+.counter-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 55rem;
+}
+.counter-btn-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-heading {
+  /* margin-top: -10rem; */
+  margin-left: 5rem;
+  margin-top: 2.5rem;
+  font-size: 20px;
+  color: #0f3967;
+  font-weight: 600;
 }
