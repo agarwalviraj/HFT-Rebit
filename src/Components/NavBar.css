@@ -1,0 +1,30 @@
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+
+.nav-link {
+  margin: 2rem;
+  color: rgb(34, 34, 34);
+  font-family: "roboto";
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+.nav-link::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #08e8cd;
+  transition: width 0.3s;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
