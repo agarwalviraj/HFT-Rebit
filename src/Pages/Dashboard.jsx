@@ -57,7 +57,7 @@ const Dashboard = () => {
   const accountChangedHandler = (newAccount) => {
     setDefaultAccount(newAccount);
     getUserBalance(newAccount.toString());
-    setConnButtonText("Wallet Connected");
+    setConnButtonText("Update amount");
   };
 
   const getUserBalance = (address) => {
@@ -118,9 +118,10 @@ const Dashboard = () => {
             <button
               type="submit"
               className="claim-button"
-              onClick={() =>
-                startPayment({ ether: count, addr: defaultAccount })
-              }
+              onClick={() => {
+                startPayment({ ether: count, addr: defaultAccount });
+                setCount(0);
+              }}
             >
               Claim
             </button>
