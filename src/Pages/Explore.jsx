@@ -1,9 +1,34 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
-import "./explore.css";
+import "../styles/explore.css";
 
 const Explore = () => {
-  const a = [1, 2, 3, 4];
+  const a = [
+    {
+      wallet: "0x447c61305057716542b69338efa60924c61aca52",
+      state: "rajasthan",
+      amount: "200g",
+      total: "4.2kg",
+    },
+    {
+      wallet: "0x447c61305057716542b69338efa60924c61aca52",
+      state: "rajasthan",
+      amount: "200g",
+      total: "4.2kg",
+    },
+    {
+      wallet: "0x447c61305057716542b69338efa60924c61aca52",
+      state: "rajasthan",
+      amount: "200g",
+      total: "4.2kg",
+    },
+    {
+      wallet: "0x447c61305057716542b69338efa60924c61aca52",
+      state: "rajasthan",
+      amount: "200g",
+      total: "4.2kg",
+    },
+  ];
   return (
     <>
       <NavBar />
@@ -37,12 +62,12 @@ const Explore = () => {
               <th>Total</th>
             </tr>
             <tbody>
-              {a.map(() => (
+              {a.map((curr) => (
                 <tr>
-                  <td>0xasdfasf324235df</td>
-                  <td>Rajasthan</td>
-                  <td>200g</td>
-                  <td>4.2kg</td>
+                  <td>{curr.wallet}</td>
+                  <td>{curr.state}</td>
+                  <td>{curr.amount}</td>
+                  <td>{curr.total}</td>
                 </tr>
               ))}
             </tbody>

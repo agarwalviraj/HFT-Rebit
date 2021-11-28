@@ -53,6 +53,7 @@ span {
   color: aliceblue;
   background-color: #0f3967;
   border-radius: 4px;
+  transition-duration: 0.3s;
   border-style: none;
   /* filter: drop-shadow(3px 4px 16px #155024); */
 }
@@ -67,7 +68,6 @@ span {
   /* filter: drop-shadow(3px 4px 16px #64ff8b); */
   cursor: pointer;
   transform: translate3d(0, 5px, 0);
-  transition-duration: 0.3s;
 }
 
 .learnmore {
@@ -77,6 +77,7 @@ span {
   font-family: "roboto";
   background-color: rgba(0, 0, 0, 0);
   border-style: none;
+  transition-duration: 0.3s;
 }
 .learnmore:hover {
   margin-left: 24px;
@@ -87,7 +88,6 @@ span {
   border-style: none;
   cursor: pointer;
   font-size: 22px;
-  transition-duration: 0.3s;
 }
 
 .hero-section1 {

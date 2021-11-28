@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./dashboard.css";
+import "../styles/dashboard.css";
 import NavBar from "../Components/NavBar";
 import { ethers } from "ethers";
 import axios from "axios";
@@ -10,16 +10,10 @@ import glass from "../assets/glass.jpg";
 
 const startPayment = async ({ setError, setTxs, ether, addr }) => {
   try {
-    // if (!window.ethereum)
-    //   throw new Error("No crypto wallet found.please install it. ");
-
-    // REACT_APP_BACKEND_URL=
     await axios.post(process.env.REACT_APP_BACKEND_URL + "/send", {
       address: addr,
       amount: ether,
     });
-
-    // await window.ethereum.send("eth_requestAccounts");
 
     console.log({ ether, addr });
   } catch (err) {
@@ -63,7 +57,7 @@ const Dashboard = () => {
   const accountChangedHandler = (newAccount) => {
     setDefaultAccount(newAccount);
     getUserBalance(newAccount.toString());
-    setConnButtonText("wallet Connected");
+    setConnButtonText("Wallet Connected");
   };
 
   const getUserBalance = (address) => {
@@ -111,24 +105,26 @@ const Dashboard = () => {
             the smart bin. We don’t force you but reward you for the kindness
             towards nature!
           </p>
-          <div className="input-value">{count} ETH</div>
+          <div className="claim-div">
+            <div className="input-value">{count} ETH</div>
 
-          <input
+            {/* <input
             type="text"
             className="wallet-key"
-            placeholder="0 ETH"
+            placeholder={count + " ETH"}
             onChange={(e) => setAmount(e.target.value)}
-          />
+          /> */}
 
-          <button
-            type="submit"
-            className="claim-button"
-            onClick={() =>
-              startPayment({ ether: amount, addr: defaultAccount })
-            }
-          >
-            Claim
-          </button>
+            <button
+              type="submit"
+              className="claim-button"
+              onClick={() =>
+                startPayment({ ether: count, addr: defaultAccount })
+              }
+            >
+              Claim
+            </button>
+          </div>
           <p className="counter-heading">
             Select the amount you contributed in the smart bin
           </p>
@@ -158,7 +154,7 @@ const Dashboard = () => {
             <button
               className="conter-btn"
               onClick={() => {
-                setCount(count + 0.1);
+                setCount(parseFloat(count) + 0.1);
               }}
             >
               plastic
@@ -170,7 +166,7 @@ const Dashboard = () => {
             <button
               className="conter-btn"
               onClick={() => {
-                setCount(count + 0.01);
+                setCount(parseFloat(count) + 0.01);
               }}
             >
               metal
@@ -181,7 +177,7 @@ const Dashboard = () => {
             <button
               className="conter-btn"
               onClick={() => {
-                setCount(count + 0.1);
+                setCount(parseFloat(count) + 0.1);
               }}
             >
               paper
@@ -192,7 +188,7 @@ const Dashboard = () => {
             <button
               className="conter-btn"
               onClick={() => {
-                setCount(count + 0.1);
+                setCount(parseFloat(count) + 0.1);
               }}
             >
               glass

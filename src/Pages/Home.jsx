@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import hero from "../assets/rebit.png";
 
@@ -8,8 +8,6 @@ const Home = () => {
     window.scrollTo({
       top: 300,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour
-         in place of 'smooth' */
     });
   };
   return (
